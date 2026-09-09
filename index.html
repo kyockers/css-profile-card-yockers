@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<!-- I have not actually learned any of the meta tags yet, except for charset. The name and content fields would be for 
+checking whether you're on a desktop or mobile device, perhaps?-->
+  <title>Yockers Profile Card</title>
+  <link rel="stylesheet" href="css/style.css">      <!--link to stylesheet-->
+</head>
+
+<body>
+<!-- Layout B: image on the left -->
+  <div class="card">      <!--card container (box) style-->
+    <img class="card-avatar" src="images/profile.png" alt="Closeup photo of Kim Yockers wearing glasses" width="140" height="140">   <!--headshot style-->
+    <div>    <!--content container-->
+      <h1 class="card-name">Kim Yockers</h1>    <!--card header h1 style-->
+      <h2 class="card-tagline">“A delight to work with!” says everyone.</h2>    <!--subhead h2 style-->
+      <!--paragraph style for plain text-->
+      <p class="card-bio">Graphic designer by day, at-home karaoke genius by night. I love animals, playing music, making art, disc golf, 
+      D&D, reading books, horror movies, and macaroni & cheese.<br><br>
+  <!--I'm not sure if it's better practice to use <br> in this situation, or to split the text using <p>. I chose to use <br>, 
+  please let me know if I should be using <p> instead.-->
+      Some of my specialties include:</p> 
+      <!--list of skills-->    
+      <ul class="card-skills">   <!--list style-->
+        <li>Graphic Design</li>   <!--list items-->
+        <li>Web Design</li>
+        <li>Drawing</li>
+      </ul>
+  <!--link style-->
+    <a class="card-link" href="https://kyockers.github.io/html-basics-yockers/" target="_blank" rel="noopener">Visit my portfolio!</a>
+    </div>
+  </div>
+
+  <div>  <!--content container-->
+    <p class="dark-text">Reflection:<br>I had a lot of fun making this! I didn't find any of the CSS hard to use, necessarily, but I 
+      definitely spent the most time on the text styling. I haven't used rem before (we didn't cover that in my HTML 1 class), 
+      so I just played with it until it looked like I wanted it to. The visual playground is surprisingly easy to use! I like that it explains 
+      how and why things work. External CSS is far superior to inline CSS (in my humble opinion). I get confused when there's a lot of styling 
+      in HTML. It's WAY too easy to forget things, like closing tags, and it gets hard to keep track of what styling is being used where. 
+      It also makes it impossible to change styling on multiple items at once, so there's a lot more room for error. I like being able to 
+      keep everything organized and labeled!</p>
+  </div>
+
+</body>
+</html>

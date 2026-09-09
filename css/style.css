@@ -1,0 +1,130 @@
+
+/* Base styles inspired by Newspaper preset */
+body {
+  font-family: Georgia,serif;   /* typeface */
+  color: #f5f5f7;             /* text color */
+}
+
+/* Header 1 styles */
+h1 {
+  font-size: 2.7rem;            /* font size XL */
+  font-weight: 700;             /* font weight bold */
+  letter-spacing: 0em;          /* kerning */  
+  line-height: 1.5;             /* leading */
+  text-align: left;             /* align text left */
+}
+
+h2 {
+  font-size: 2.4rem;            /* font size large */
+  font-weight: 700;             /* font weight bold */
+  letter-spacing: 0em;          /* kerning */
+  line-height: 1.5;             /* leading */
+  text-align: left;             /* align text left */
+}
+
+p {
+  font-size: 0.85rem;           /* font size small*/
+  line-height: 1.5;             /* leading */
+  font-weight: 500;             /* font weight regular */
+  text-align: left;             /* align text left */
+}
+
+ul {
+  font-size: 0.85rem;           /* font size small*/
+  line-height: 1.5;             /* leading */
+  font-weight: 500;             /* font weight regular */
+  text-align: left;             /* align text left */
+}
+
+a {
+  font-size: 1.2rem;            /* font size medium*/
+  font-weight: 600;             /* font weight medium */
+  font-style: italic;           /* font style italic */
+  letter-spacing: 0em;          /* kerning */
+  line-height: 1.5;             /* leading */
+  text-align: left;             /* align text left */
+}
+
+/* link styles */
+/* unclicked style */
+a:link { 
+  color: #fbbe08;             /* link color */
+  text-decoration: underline;   /* link underline */
+}
+/* hover style */
+a:hover {
+  color: #bb29ff;             /* link color */
+  text-decoration: underline;   /* link underline */
+}
+/* during click style */
+a:active {
+  color: #6f01a2;             /* link color */
+  text-decoration: underline;   /* link underline */
+}
+/* post-click style */
+a:visited {
+  color: #f5f5f7;             /* link color */
+  text-decoration: underline;   /* link underline */
+} 
+
+/* p style for reflection text */
+.dark-text {
+  color: #1c1c1e;             /* text color */
+  line-height: 1.8;             /* leading */
+}
+
+/* Card container — inspired by Drop preset */
+.card {
+  width: 600px;                           /* box width - static */
+  height: auto;                           /* box height - adjustable to fit content */
+  background-color: #1c1c1e;            /* container background color */
+  border: 5px solid #fbbe08;            /* container border color */
+  border-radius: 8px 50px 50px 50px;      /* border corner radii, makes a nice talk bubble kind of shape */
+  box-sizing: content;                    /* sizes the box to the content -- is this the right choice here? */
+  display: flex;                          /* adjustable container (this is my first time working with this) */ 
+  flex-direction: row;                    /* puts content side-by-side instead of stacked */
+  flex-wrap: nowrap;                      /* keeps columns separated */
+  gap: 15px;                              /* space between columns */
+  margin: 15px;                           /* margin around content */
+  padding-bottom: 35px;                   /* padding outside of card container */
+}
+
+/* Avatar image */
+.card-avatar {
+  width: 140px;                    /* image width: 140px for Layout B */
+  height: 140px;                   /* image height: 140 px to make a square */
+  border-radius: 50%;              /* rounds corners to make it a circle */
+  border: 5px solid #fbbe08;     /* border width, style, color */
+  margin: 25px;                    /* space around image */
+}
+
+/* inspired by Newspaper preset */
+.card-name {              /* name text style (h1) */
+  color: #fbbe08;       /* text color */
+  margin-bottom: -5px;    /* bottom spacing */ /* I wanted this less spaced out, let me know if this is not how to do it */  
+}
+
+.card-tagline {           /* tagline text style (h2) */
+  color: #f5f5f7;       /* text color */
+  font-size: 1.1rem;      /* text size */
+}
+
+.card-bio {                       /* bio text style (p) */
+  color:#1c1c1e;                /* text color */
+  background-color: #fbbe08;    /* background color */
+  margin: 10px 0px 0px -5px;      /* margin, moved left */
+  padding: 15px 20px 0px 15px;    /* space around bio text container */
+}
+
+.card-skills {                    /* list style (ul) */
+  color:#1c1c1e;                /* text color */
+  background-color: #fbbe08;    /* background color */
+  margin: 0px 0px 20px -5px;      /* margin, moved left */
+  padding: 5px 10px 15px 40px;    /* space around list container */
+}
+
+/* I feel like this might be redundant since I put link styling above? */
+/* Or maybe I just don't understand this part as well as I thought */
+.card-link {                      /* link style (a) */
+  color: #fbbe08;               /* link color */
+}
